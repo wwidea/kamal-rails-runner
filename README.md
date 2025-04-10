@@ -7,7 +7,7 @@ Run Rails commands inside Kamal-managed containers on a Docker server.
 To install `kamal-rails-runner`, run the following command:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/wwidea/kamal-rails-runner/main/install.sh | sudo sh
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/wwidea/kamal-rails-runner/main/install.sh | sudo sh
 ```
 
 ## Usage
