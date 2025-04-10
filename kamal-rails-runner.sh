@@ -1,4 +1,6 @@
 #!/bin/sh
+# https://github.com/wwidea/kamal-rails-runner
+
 SERVICE_NAME="$1"
 COMMAND="$2"
 
