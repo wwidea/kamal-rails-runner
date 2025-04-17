@@ -1,11 +1,11 @@
 #!/bin/sh
 # https://github.com/wwidea/kamal-rails-runner
 
-SERVICE_NAME="$1"
+APPLICATION="$1"
 COMMAND="$2"
 
 CONTAINER_ID=$(docker ps \
-  --filter "label=service=$SERVICE_NAME" \
+  --filter "label=application=$APPLICATION" \
   --filter "label=role=web" \
   --format '{{.ID}}' | head -n 1)
 
@@ -16,3 +16,4 @@ else
   echo "No matching container found."
   exit 1
 fi
+
